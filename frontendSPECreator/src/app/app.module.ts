@@ -8,10 +8,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ComponentsModule } from './components/components.module';
 import { PagesModule } from './pages/pages.module';
+import { RouterOutlet } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http'
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [BrowserModule, AppRoutingModule, ComponentsModule, PagesModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    RouterOutlet,
+    ComponentsModule,
+    PagesModule,
+    HttpClientModule
+  ],
   providers: [provideClientHydration()],
   bootstrap: [AppComponent],
 })
