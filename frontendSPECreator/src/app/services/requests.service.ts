@@ -11,10 +11,10 @@ export class RequestsService {
   constructor(private _httpClient: HttpClient) {}
 
   public getDataUser(): void{
-    this._httpClient.get<IUser[]>(this.URL).subscribe(value => {
-      console.log(value)
-      this.data = value;
-    });
+    // this._httpClient.get<IUser[]>(this.URL).subscribe(value => {
+    //   console.log(value)
+    //   this.data = value;
+    // });
   }
 
   public sendDataUser(){

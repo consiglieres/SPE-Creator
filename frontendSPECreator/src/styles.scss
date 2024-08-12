@@ -1,7 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
-
+html, body {
+  margin: 0;
+  pad: 0;
+}
 
 html {
   background-color: black;
   color: white;
+}
+
+input, button{
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }

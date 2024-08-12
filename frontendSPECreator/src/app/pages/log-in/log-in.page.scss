@@ -1,0 +1,44 @@
+.main{
+  display: flex;
+  justify-content: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  background-color: gray;
+  align-content: center;
+  block-size: 350px;
+}
+
+.main_content{
+  display: flex;
+  flex-direction: column;  
+  margin: auto;
+  
+
+  .main_header{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+
+    .main_log-in, .main_sign-up {
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-size: 40px;
+      margin: 0px 20px;
+    }
+  }
+
+  .main_forms{
+    display: flex;
+    flex-direction: column;
+
+    .main_input_email, .main_input_password, .main_button {
+      margin: 0.4rem 0px;
+    }
+
+    .main_input_border, .main_button_border{
+      block-size: 50px;
+      border: 2px solid black;
+      border-radius: 15px;
+    }
+
+  }
+}

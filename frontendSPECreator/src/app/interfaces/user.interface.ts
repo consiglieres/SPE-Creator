@@ -1,4 +1,6 @@
+import { FormControl } from "@angular/forms";
+
 export interface IUser {
-  name: string;
-  password: string;
+  emailUser: FormControl<string>;
+  passwordUser: FormControl<string>;
 }

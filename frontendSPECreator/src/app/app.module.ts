@@ -6,7 +6,6 @@ import {
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ComponentsModule } from './components/components.module';
 import { PagesModule } from './pages/pages.module';
 import { RouterOutlet } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http'
@@ -17,7 +16,6 @@ import { HttpClientModule } from '@angular/common/http'
     BrowserModule,
     AppRoutingModule,
     RouterOutlet,
-    ComponentsModule,
     PagesModule,
     HttpClientModule
   ],
