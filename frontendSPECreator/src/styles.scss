@@ -2,6 +2,11 @@
 html, body {
   margin: 0;
   pad: 0;
+  height: 100%;
+}
+
+body {
+  margin: 0 20rem;
 }
 
 html {
@@ -9,8 +14,26 @@ html {
   color: white;
 }
 
+input, button, a, h3 {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
 input, button{
   text-align: center;
   font-size: 25px;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  
+}
+
+a {
+  color: bisque;
+  text-decoration: none;
+}
+
+a:active {
+  color: red;
+}
+
+button:active {
+  background-color: black;
+  color: white;
 }

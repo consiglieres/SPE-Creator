@@ -1,0 +1,46 @@
+.main{
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.main_content_position{
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.main_content{
+  background-color: gray;
+  block-size: 350px;
+  width: 30rem;
+  padding: 5rem;
+  border-radius: 15px;
+  
+  .main_header{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+
+    .main_log-in, .main_sign-up {
+      font-size: 40px;
+      margin: 0px 20px;
+    }
+  }
+
+  .main_forms{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .main_input_email, .main_input_password, .main_input_confirm-password, .main_button {
+      margin: 0.4rem 0px;
+    }
+
+    .main_input_border, .main_button_border{
+      block-size: 50px;
+      border: 2px solid black;
+      border-radius: 15px;
+    }
+  }
+}

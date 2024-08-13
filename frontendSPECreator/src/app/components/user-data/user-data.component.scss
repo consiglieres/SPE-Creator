@@ -1,0 +1,20 @@
+.user-information_photo {
+  display: flex;
+  justify-content: center;
+  height: 80px;
+  width: 80px;
+
+  .user-information_upload-button {
+    border: 0px;
+    border-radius: 50px;
+    height: 80px;
+    width: 80px;
+    position: absolute;
+    opacity: 0;
+  }
+
+  .user-information_img {
+    border-radius: 100px;
+    height: 100%;
+  }
+}

@@ -1,13 +1,28 @@
 <main class="main">
-  <section class="main_content">
+  <section class="main_content main_content_position">
+    
     <section class="main_header">
       <a class="main_log-in" routerLink="/log-in">Log-in</a>
       <a class="main_sign-up" routerLink="/sign-up">Sign-up</a>
     </section>
-    <form class="main_forms">
-      <input type="text" class="main_input_email">
-      <input type="text" class="main_input_password">
-      <button class="main_button">Отправить</button>
+
+    <form class="main_forms" [formGroup]="userData">
+
+      <input type="email" placeholder="Email" 
+      class="main_input_email main_input_border" 
+      formControlName="emailUser">
+
+      <input type="password" placeholder="Password" 
+      class="main_input_password main_input_border"
+      formControlName="passwordUser">
+
+      <input type="password" placeholder="Confirm password" 
+      class="main_input_confirm-password main_input_border" 
+      formControlName="confirmPasswordUser">
+
+      <button class="main_button main_button_border" (click)="SaveUserData()">Отправить</button>
+
     </form>
+
   </section>
 </main>

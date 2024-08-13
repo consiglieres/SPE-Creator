@@ -5,6 +5,7 @@ import { ErrorComponent } from './pages/error/error.page';
 import { LogInComponent } from './pages/log-in/log-in.page';
 import { SignUpComponent } from './pages/sign-up/sign-up.page';
 import { ProfileComponent } from './pages/profile/profile.page';
+import { CreatePortfolioComponent } from './pages/create-portfolio/create-portfolio.page';
 
 const routes: Routes = [
   {
@@ -27,6 +28,10 @@ const routes: Routes = [
   {
     path: 'sign-up',
     component: SignUpComponent
+  },
+  {
+    path: 'create-portfolio',
+    component: CreatePortfolioComponent
   },
   {
     path: '**',

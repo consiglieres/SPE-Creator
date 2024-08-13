@@ -7,6 +7,8 @@ import { FilterComponent } from './filter/filter.component';
 import { HeaderComponent } from './header/header.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterLink } from '@angular/router';
+import { UploadPhotoComponent } from './user-data/user-data.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -15,18 +17,21 @@ import { RouterLink } from '@angular/router';
     FooterComponent,
     FilterComponent,
     HeaderComponent,
+    UploadPhotoComponent,
   ],
   imports: [
     CommonModule,
     BrowserModule,
-    RouterLink
+    RouterLink,
+    FormsModule
   ],
   exports: [
     CardComponent,
     SortCardsComponent,
     FooterComponent,
     FilterComponent,
-    HeaderComponent
+    HeaderComponent,
+    UploadPhotoComponent
   ],
   providers: [],
 })

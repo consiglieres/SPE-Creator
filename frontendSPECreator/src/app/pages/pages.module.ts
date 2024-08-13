@@ -10,6 +10,7 @@ import { RouterLink } from '@angular/router';
 import { BrowserModule } from '@angular/platform-browser';
 import { ComponentsModule } from '../components/components.module';
 import { ReactiveFormsModule } from '@angular/forms';
+import { CreatePortfolioComponent } from './create-portfolio/create-portfolio.page';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     ErrorComponent,
     LogInComponent,
     SignUpComponent,
-    ProfileComponent
+    ProfileComponent,
+    CreatePortfolioComponent
   ],
   imports: [
     CommonModule,
