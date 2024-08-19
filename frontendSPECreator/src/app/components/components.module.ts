@@ -8,7 +8,8 @@ import { HeaderComponent } from './header/header.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterLink } from '@angular/router';
 import { UploadPhotoComponent } from './user-data/user-data.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CardFormComponent } from './card-form/card-form.component';
 
 @NgModule({
   declarations: [
@@ -18,12 +19,14 @@ import { FormsModule } from '@angular/forms';
     FilterComponent,
     HeaderComponent,
     UploadPhotoComponent,
+    CardFormComponent,
   ],
   imports: [
     CommonModule,
     BrowserModule,
     RouterLink,
-    FormsModule
+    FormsModule,
+    ReactiveFormsModule
   ],
   exports: [
     CardComponent,
@@ -31,7 +34,8 @@ import { FormsModule } from '@angular/forms';
     FooterComponent,
     FilterComponent,
     HeaderComponent,
-    UploadPhotoComponent
+    UploadPhotoComponent,
+    CardFormComponent
   ],
   providers: [],
 })

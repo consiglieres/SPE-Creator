@@ -1,0 +1,6 @@
+<section class="card-form" [formGroup]="dataCard">
+  <input type="text" class="card-form_name" formControlName="cardName">
+  <input type="text" class="card-form_description" formControlName="description">
+  <input type="file" class="card-form_files" formControlName="file">
+  <button class="card-form_send" (click)="SendCard()">Send</button>
+</section>

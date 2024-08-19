@@ -1,8 +1,15 @@
+.user-information {
+  display: flex;
+  flex-direction: row;
+  
+}
+
 .user-information_photo {
   display: flex;
   justify-content: center;
   height: 80px;
   width: 80px;
+  margin: auto 25px;
 
   .user-information_upload-button {
     border: 0px;

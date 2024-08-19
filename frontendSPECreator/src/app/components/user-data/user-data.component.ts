@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-upload-photo',
@@ -7,7 +7,11 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class UploadPhotoComponent {
-  public img: string = "";
+  @Input() public img: string = 'https://avatars.githubusercontent.com/u/98966123?v=4'
+  @Input() userName: string = ''
+  @Input() email: string = ''
+  @Input() portfolioQuantity?: number
+  
 
   public ConsolePhoto(): void{
     console.log(this.img)

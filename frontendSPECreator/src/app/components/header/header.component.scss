@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 10px;
+
+  .header_content {
+    display: flex;
+    justify-content:space-between;
+
+    .header_logo {
+      
+    }
+
+    .header_profile {
+      margin: auto 0px;
+    }
+
+    .header_create-portfolio {
+      margin: auto 0px;
+    }
+  }
+} 
