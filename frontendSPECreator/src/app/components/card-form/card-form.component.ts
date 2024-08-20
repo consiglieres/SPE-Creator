@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
-import { ICard } from '../../interfaces/card.interface';
+import { INewCard } from '../../interfaces/new-card.interface';
 
 @Component({
   selector: 'app-card-form',
@@ -9,7 +9,7 @@ import { ICard } from '../../interfaces/card.interface';
 })
 export class CardFormComponent {
 
-  public dataCard: FormGroup = new FormGroup<ICard>({
+  public dataCard: FormGroup = new FormGroup<INewCard>({
     cardName: new FormControl<string>('', {nonNullable: true}),
     description: new FormControl<string>('', {nonNullable: true}),
     file: new FormControl<string>('', {nonNullable: true})

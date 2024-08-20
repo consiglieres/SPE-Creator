@@ -5,20 +5,16 @@ import { Observable } from 'rxjs';
 
 @Injectable()
 export class RequestsService {
-  public data: IUser[] = [];
   protected URL: string = 'http://127.0.0.1:3000'
 
   constructor(private _httpClient: HttpClient) {}
 
-  public getDataUser(): void{
-    // this._httpClient.get<IUser[]>(this.URL).subscribe(value => {
-    //   console.log(value)
-    //   this.data = value;
-    // });
+  public getDataUser(): Observable<IUser[]>{
+    return this._httpClient.get<IUser[]>(this.URL)
   }
 
   public sendDataUser(){
-    setInterval(() => this._httpClient.post('http://127.0.0.1:3000', {"name": "Dima", "password": "0000"}).subscribe().unsubscribe(), 5000)
+    setInterval(() => this._httpClient.post('http://127.0.0.1:3000', {}).subscribe().unsubscribe(), 5000)
     
   }
 }

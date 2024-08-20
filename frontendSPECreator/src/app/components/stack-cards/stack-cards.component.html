@@ -1,0 +1,27 @@
+<section class="main">
+  @if(observableCards$ | async; as cards){
+    @for(card of cards; track card){
+      <section class="main_card">
+
+        <section class="main_image">
+          <img src={{card}}>
+        </section>
+
+        <section class="main_name">
+          <span>Name: </span>
+          <span>{{card}}</span>
+        </section>
+
+        <section class="main_description">
+          <span>Description:</span>
+          <span>{{card}}</span>
+        </section>
+
+        <section class="main_rate">
+
+        </section>
+
+      </section>
+    }
+  }
+</section>

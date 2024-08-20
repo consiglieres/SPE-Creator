@@ -1,1 +1,12 @@
-<p>filter works!</p>
+<section class="filter" [formGroup]="filters">
+  <h1>Filter</h1>
+
+  <input class="filter_input" type="text" formControlName="cardName" (change)="cardFilter()">
+
+  <select name="" id="" class="filter_rate" formControlName="cardRate" (change)="cardFilter()">
+    <option>rates</option>
+    <!-- @for(){
+      <option value="rate">{{}}</option>
+    } -->
+  </select>
+</section>

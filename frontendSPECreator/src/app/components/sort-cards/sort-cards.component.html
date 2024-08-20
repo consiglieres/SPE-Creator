@@ -1,1 +1,25 @@
-<p>sort-cards works!</p>
+<section class="sort">
+  <h1>Sort</h1>
+
+  <select class="sort_select">
+    <option>Rate</option>
+    @for(rate of rates; track rate){
+      <option value="rate">{{rate}}</option>
+    }
+  </select>
+
+  <select class="sort_select">
+    <option>Name</option>
+    @for(name of names; track name){
+      <option value="name">{{name}}</option>
+    }
+  </select>
+
+  <select class="sort_select">
+    <option>Language</option>
+    @for(language of languages; track language){
+      <option value="language">{{language}}</option>
+    }
+  </select>
+
+</section>

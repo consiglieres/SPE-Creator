@@ -1,8 +1,7 @@
 import { FormControl } from "@angular/forms";
 
-export interface ICard {
+export interface INewCard {
   cardName: FormControl<string>
   description: FormControl<string>
   file: FormControl<string>
-
 }

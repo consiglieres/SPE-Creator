@@ -1,2 +1,12 @@
 <app-header></app-header>
-<button (click)="PrintUser()">tap</button>
+
+<section class="main">
+  <section class="main_filter">
+    <app-filter></app-filter>
+    <app-sort-cards></app-sort-cards>
+  </section>
+
+  <section class="main_cards">
+    <app-stack-cards></app-stack-cards>
+  </section>
+</section>
