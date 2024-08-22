@@ -1,17 +1,19 @@
-.sort {
+.filter {
     display: flex;
     flex-direction: column;
 
-    .sort_text {
+    .filter_text {
         text-align: center;
     }
-    
-    .sort_select {
+
+    .filter_input, .filter_rate {
         border: 1px solid black;
         border-radius: 5px;
-        block-size: 2rem;
-        text-align: center;
         margin-bottom: 0.5rem;
+        text-align: center;
+    }
+
+    .filter_rate {
+        block-size: 2rem;
     }
 }
-

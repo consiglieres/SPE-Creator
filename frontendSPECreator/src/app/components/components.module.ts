@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SortCardsComponent } from './sort-cards/sort-cards.component';
 import { FooterComponent } from './footer/footer.component';
-import { FilterComponent } from './filter/filter.component';
+import { FilterComponent } from './filter-cards/filter.component';
 import { HeaderComponent } from './header/header.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterLink } from '@angular/router';
@@ -11,6 +11,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CardFormComponent } from './card-form/card-form.component';
 import { StackCardsComponent } from './stack-cards/stack-cards.component';
 import { RateComponent } from './rate/rate.component';
+import { ProfileButtonComponent } from './profile-button/profile-button.component';
+import { RegistrationAuthorizationButtonsComponent } from './registration-authorization-buttons/registration-authorization-buttons.component';
 
 @NgModule({
   declarations: [
@@ -22,6 +24,8 @@ import { RateComponent } from './rate/rate.component';
     CardFormComponent,
     StackCardsComponent,
     RateComponent,
+    ProfileButtonComponent,
+    RegistrationAuthorizationButtonsComponent,
   ],
   imports: [
     CommonModule,
@@ -37,7 +41,9 @@ import { RateComponent } from './rate/rate.component';
     HeaderComponent,
     UploadPhotoComponent,
     CardFormComponent,
-    StackCardsComponent
+    StackCardsComponent,
+    ProfileButtonComponent,
+    RegistrationAuthorizationButtonsComponent
   ],
   providers: [],
 })

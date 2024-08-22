@@ -1,13 +1,16 @@
 <header class="header">
   <section class="header_content">
     
-    <img src="" class="header_logo">
+    <img src="../../../assets/chrome_20u8YrqsDi.png" class="header_logo">
 
     <a class="header_create-portfolio" 
     routerLink='/create-portfolio'>New portfolio</a>
 
-    <a class="header_profile" 
-    routerLink="/profile">Profile</a>
-
+    @if(TOKEN !== ''){
+      <app-profile-button class="header_profile"></app-profile-button>
+    }
+    @else{
+      <app-registration-authorization-buttons class="header_regisration-authorization"></app-registration-authorization-buttons>
+    }
   </section>
 </header>
