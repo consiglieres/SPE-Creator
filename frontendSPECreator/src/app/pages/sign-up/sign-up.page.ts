@@ -1,11 +1,12 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { IGetNewUser } from '../../interfaces/new-user.interface';
 
 @Component({
   selector: 'app-sign-up',
   templateUrl: './sign-up.page.html',
-  styleUrl: './sign-up.page.scss'
+  styleUrl: './sign-up.page.scss',
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class SignUpComponent {
   public userData: FormGroup = new FormGroup<IGetNewUser>({
@@ -14,6 +15,7 @@ export class SignUpComponent {
     confirmPasswordUser: new FormControl<string>('', {nonNullable: true, validators: Validators.email})
   }, {validators: Validators.required})
 
+  constructor(){}
 
   public SaveUserData(): void{
     let emailUser: string = this.userData.controls['emailUser'].value;

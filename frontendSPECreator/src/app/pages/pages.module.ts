@@ -26,11 +26,11 @@ import { CreatePortfolioComponent } from './create-portfolio/create-portfolio.pa
     BrowserModule,
     RouterLink,
     ComponentsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   exports: [],
   providers: [
-    RequestsService
+    RequestsService,
   ],
 })
 export class PagesModule {}
